@@ -55,6 +55,21 @@
       ]
     },
     {
+      "type": "checkbox",
+      "name": "firebaseModules",
+      "message": "Shall we install Angularfire (includes Firebase)?",
+      "choices": [
+        {
+          "value": {
+            "name": "firebase",
+            "module": "firebase"
+          },
+          "name": "Firebase & Angular",
+          "checked": true
+        }
+      ]
+    },
+    {
       "type": "list",
       "name": "jQuery",
       "message": "Would you need jQuery or perhaps Zepto?",

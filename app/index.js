@@ -46,11 +46,15 @@ var GulpAngularGenerator = yeoman.generators.Base.extend({
     } else {
       this.props = {
         angularModules: [],
+        firebaseModules: [{ name: 'firebase', version: '1.0.x', module: 'firebase'}],
         jQuery: { name: null, version: null },
         resource: { name: null, version: null, module: null },
         router: { name: null, version: null, module: null },
+        firebase: { name: null, version: null, module: null },
+        angularfire: { name: null, version: null, module: null },
         ui: { name: 'bootstrap-sass-official', version: '3.1.x', key: 'bootstrap' }
       };
+      console.log(this.props);
     }
   },
 

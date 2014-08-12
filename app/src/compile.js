@@ -12,6 +12,21 @@ module.exports = function () {
     return module.module;
   });
 
+  var firebaseModules = this.props.firebaseModules.map(function (module) {
+    return module.module;
+  });
+
+  
+  var firebase = {
+    name: 'firebase',
+    version: '1.0.x'
+  };
+
+  var angularfire = {
+    name: 'angularfire',
+    version: '0.8.x'
+  };
+
   var modernizr = {
     name: 'modernizr',
     version: '2.8.x'
@@ -23,12 +38,16 @@ module.exports = function () {
     this.props.angularModules,
     this.props.resource,
     this.props.router,
-    this.props.ui
+    this.props.ui,
+    firebase,
+    angularfire
   ]);
 
   this.model.bowerResolutions = _.flatten([
     modernizr,
-    this.props.jQuery
+    this.props.jQuery,
+    firebase,
+    angularfire
   ]);
 
   this.model.wiredepExclusions = [
@@ -37,6 +56,7 @@ module.exports = function () {
 
   this.model.modulesDependencies = _.flatten([
     angularModules,
+    firebaseModules,
     this.props.resource.module,
     this.props.router.module
   ]);

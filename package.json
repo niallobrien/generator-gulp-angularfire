@@ -1,14 +1,14 @@
 {
-  "name": "generator-gulp-angular",
-  "version": "0.4.1",
-  "description": "Yeoman generator for Gulp & Angular",
+  "name": "generator-gulp-angularfire",
+  "version": "0.0.2",
+  "description": "Yeoman generator for Gulp & Angularfire (Firebase)",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "Swiip/generator-gulp-angular",
+  "repository": "niallobrien/generator-gulp-angularfire",
   "author": {
-    "name": "Swiip",
-    "email": "matthieu.lux@gmail.com",
-    "url": "https://github.com/Swiip"
+    "name": "Niall O'Brien",
+    "email": "me@niallobrien.me",
+    "url": "https://github.com/niallobrien"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -21,7 +21,11 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "gulp",
+    "angular",
+    "firebase",
+    "angularfire"
   ],
   "dependencies": {
     "async": "~0.8.0",

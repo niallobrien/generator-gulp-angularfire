@@ -1,4 +1,4 @@
-# generator-gulp-angular [![Build Status](https://secure.travis-ci.org/Swiip/generator-gulp-angular.svg?branch=master)](http://travis-ci.org/Swiip/generator-gulp-angular)
+# generator-gulp-angularfire [![Build Status](https://secure.travis-ci.org/Swiip/generator-gulp-angular.svg?branch=master)](http://travis-ci.org/Swiip/generator-gulp-angular)
 
 Offers you a Yeoman generator to initiate a Web application with the following workflow:
 
@@ -10,13 +10,14 @@ Offers you a Yeoman generator to initiate a Web application with the following w
 
 <img height="100" align="left" src="https://s3.amazonaws.com/media-p.slid.es/uploads/hugojosefson/images/86267/angularjs-logo.png">
 
-<br><br><br><br>
+<img height="100" align="left" src="https://d1qb2nb5cznatu.cloudfront.net/startups/i/13274-1e708e28fa58694493de9b2f3bf08a11-medium_jpg.jpg?buster=1334550800">
+	
+  
+## Why generator-gulp-angularfire ?
 
-## Why generator-gulp-angular ?
+This generator combines the best features of other generators like [generator-gulp-angular](https://github.com/Swiip/generator-gulp-angular), [generator-angular](https://github.com/yeoman/generator-angular), [ngTailor](https://github.com/lauterry/generator-ngtailor) and [generator-gulp-webapp](https://github.com/yeoman/generator-gulp-webapp) into an optimal workflow for starting applications with AngularJS powered by Gulp & Firebase!
 
-This generator combines the best features of other generators like [generator-angular](https://github.com/yeoman/generator-angular), [ngTailor](https://github.com/lauterry/generator-ngtailor) and [generator-gulp-webapp](https://github.com/yeoman/generator-gulp-webapp) into an optimal workflow for starting applications with AngularJS powered by Gulp!
-
-generator-gulp-angular scaffolds an AngularJS application with a full-featured gulpfile.js, giving you immediate out-of-the-box access to all tasks for modern web development.
+generator-gulp-angularfire scaffolds an Angularfire application with a full-featured gulpfile.js, giving you immediate out-of-the-box access to all tasks for modern web development with Firebase.
 
 
 My intention is to create a generator that gives users total control over their development toolbox so they can immediately start projects with their preferred tools, such as specific UI frameworks or JavaScript preprocessors.
@@ -30,9 +31,9 @@ Install the required tools: `yo`, `gulp`, `bower`
 npm install -g yo gulp bower
 ```
 
-Install `generator-gulp-angular`:
+Install `generator-gulp-angularfire`:
 ```
-npm install -g generator-gulp-angular
+npm install -g generator-gulp-angularfire
 ```
 
 Make a new directory, and `cd` into it:
@@ -40,7 +41,7 @@ Make a new directory, and `cd` into it:
 mkdir my-new-project && cd $_
 ```
 
-Run `yo gulp-angular`, optionally passing an app name:
+Run `yo gulp-angularfire`, optionally passing an app name:
 ```
 yo gulp-angular [app-name]
 ```
@@ -97,60 +98,17 @@ I tried many configurations for Protractor without success, any hint would be ap
 
 ## Changelog
 
-### 0.4.1
+### 0.0.2
+* Improves scaffolded code.
 
-* Update lots of NPM deps which fixed some bugs
-* Add option of no UI framework
-* Thanks to @GlennGeenen @rajington @otaviosoares @wrseward @gregoirjopla
-
-### 0.4.0
-
-* Add option to choose between Foundation or Bootstrap as UI Framework
-* New welcome page presenting integrated technologies
-* Several package updates: `yosay`, `browsersync`, `modernizr`, `protractor`...
-* Some bug fixes: #6, #7, #8
-* Add some documentation
-* Thanks to @shinnn
-
-### 0.3.1
-
-* Fix e2e tests to use BrowserSync as server. But no way to stop BrowserSync for now so the task never really ends.
-* Thanks to @jbpionnier @KevinLlopart
-
-### 0.3.0
-
-* Integration of BrowserSync as development server in place of a home made connect server
-* Serve task is the entry point and launch the watch task
-
-### 0.2.1
-
-* Fix main.html missing with routing
-* Fix unit tests by ignoring bootstrap js files in wiredep
-
-### 0.2.0
-
-* Convert HTML templates into JS and add them into the optimized bundle
-* Let you choose to use jQuery, Zepto or nothing (Angular's jqLite)
-* Ask for optional Angular modules: animate cookies, touch and sanitize
-* Resource handler: ngResource, Restangular, none.
-* Router: ngRoute, UI Router, none.
-
-### 0.1.1
-
-* Adding Travis CI
-
-### 0.1.0
-
-* Add unit test with karma and e2e test with protractor
-* Split gulp configuration in multiple files
-* Create 'inception' test which generate files and try gulp tasks on it
-* Add ability to serve dist files and run e2e test on dist files
-* Still no options
 
 ### 0.0.1
 
 * Initial commit
-* Scaffolds a working directory but with no options and no tests
+* Scaffolds a working Angularfire application
+
+## Thanks
+@Swiip and his [generator-gulp-angular](https://github.com/Swiip/generator-gulp-angular) project.
 
 ## License
 
