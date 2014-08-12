@@ -9,7 +9,12 @@ var $ = require('gulp-load-plugins')({
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.scss')
     .pipe($.plumber())
-    .pipe($.rubySass({style: 'expanded'}))
+    .pipe($.sass({
+      errLogToConsole: false,
+      onError: function(err) {
+        return $.notify().write(err);
+      }
+    }))
     .pipe($.autoprefixer('last 1 version'))
     .pipe(gulp.dest('.tmp/styles'))
     .pipe($.size());

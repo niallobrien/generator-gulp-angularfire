@@ -54,7 +54,6 @@ var GulpAngularGenerator = yeoman.generators.Base.extend({
         angularfire: { name: null, version: null, module: null },
         ui: { name: 'bootstrap-sass-official', version: '3.1.x', key: 'bootstrap' }
       };
-      console.log(this.props);
     }
   },
 
