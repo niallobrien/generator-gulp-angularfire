@@ -43,7 +43,7 @@ mkdir my-new-project && cd $_
 
 Run `yo gulp-angularfire`, optionally passing an app name:
 ```
-yo gulp-angular [app-name]
+yo gulp-angularfire [app-name]
 ```
 
 ### Use Gulp tasks
