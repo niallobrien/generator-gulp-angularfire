@@ -1,5 +1,8 @@
 {
   "name": "generator-gulp-angularfire",
+    "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
   "version": "0.0.3",
   "description": "Yeoman generator for Gulp & Angularfire (Firebase)",
   "license": "MIT",
